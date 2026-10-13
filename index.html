@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Haikal Danial | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Haikal<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <div class="hamburger" id="hamburger" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="greeting">Portfolio Case Study</span>
+                <h1 class="dynamic-title">Muhammad Haikal Danial</h1>
+                <p class="hero-subtitle">Network Computing Student at UNIMAS</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">Explore Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Hi! I'm Haikal, an undergraduate computer science student specializing in Network Computing at Universiti Malaysia Sarawak (UNIMAS). My programming journey started back at Kolej Matrikulasi Selangor, where I first discovered how coding and logic can solve practical problems.</p>
+                        <p>Over the course of my studies, I've worked hands-on with system analysis, database design, UML modeling, and writing code across multiple languages like Python, Java, and JavaScript. I enjoy transforming complex requirements into structured, functioning software solutions.</p>
+                        
+                        <div class="skills-container">
+                            <h3>Core Technical Skills</h3>
+                            <div class="skill-bar"><span class="skill-name">Python & Java Development</span><div class="bar"><div class="progress" style="width: 85%;"></div></div></div>
+                            <div class="skill-bar"><span class="skill-name">Web Frontend (HTML, CSS, JS)</span><div class="bar"><div class="progress" style="width: 80%;"></div></div></div>
+                            <div class="skill-bar"><span class="skill-name">Database Management & MySQL</span><div class="bar"><div class="progress" style="width: 85%;"></div></div></div>
+                            <div class="skill-bar"><span class="skill-name">System Analysis & UML Modeling</span><div class="bar"><div class="progress" style="width: 90%;"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Selected Works</h2>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Work</button>
+                    <button class="filter-btn" data-filter="system">System Design</button>
+                    <button class="filter-btn" data-filter="web">Web Applications</button>
+                    <button class="filter-btn" data-filter="database">Databases</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-category="system">
+                        <div class="project-img-wrapper">
+                            <img src="https://picsum.photos/seed/escooter/400/250" alt="E-Scooter Rental Management System" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Scooter Rental System</h3>
+                            <p>Created comprehensive system workflow models, use cases, and sequence diagrams to map out urban e-scooter rentals.</p>
+                            <div style="display: flex; gap: 0.4rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">UML</span>
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">System Design</span>
+                            </div>
+                            <a href="https://github.com/heavonodysseus-pixel" target="_blank" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <img src="https://picsum.photos/seed/health/400/250" alt="Personal Health Monitoring Application" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3>Health Monitor Prototype</h3>
+                            <p>Designed a wellness tracking concept meant to log daily activities, nutrition, sleep cycles, and deliver basic feedback.</p>
+                            <div style="display: flex; gap: 0.4rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">Database Design</span>
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">UI Concept</span>
+                            </div>
+                            <a href="https://github.com/heavonodysseus-pixel" target="_blank" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="system">
+                        <div class="project-img-wrapper">
+                            <img src="https://picsum.photos/seed/bus/400/250" alt="Bus Ticketing System for Kuching City" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3>Kuching Bus Ticketing Design</h3>
+                            <p>Analyzed user interactions and built process models for a local city bus booking platform to streamline ticket purchases.</p>
+                            <div style="display: flex; gap: 0.4rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">UML Diagrams</span>
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">Process Modeling</span>
+                            </div>
+                            <a href="https://github.com/heavonodysseus-pixel" target="_blank" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="database">
+                        <div class="project-img-wrapper">
+                            <img src="https://picsum.photos/seed/studentdb/400/250" alt="Student Database Management System" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3>Student Database App</h3>
+                            <p>Implemented relational schema designs and SQL queries in MySQL to securely manage student records and handle CRUD tasks.</p>
+                            <div style="display: flex; gap: 0.4rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">MySQL</span>
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">SQL</span>
+                            </div>
+                            <a href="https://github.com/heavonodysseus-pixel" target="_blank" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <img src="https://picsum.photos/seed/portfolio/400/250" alt="Portfolio Website" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>Hand-coded this responsive developer portfolio from scratch utilizing semantic HTML5, modern CSS, and vanilla JS.</p>
+                            <div style="display: flex; gap: 0.4rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">HTML5/CSS3</span>
+                                <span style="font-size: 0.75rem; background: var(--secondary-color); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border-color);">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/heavonodysseus-pixel" target="_blank" class="project-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <p style="margin-bottom: 0.75rem;">Have questions or want to collaborate? Drop me an email or check out my profiles below.</p>
+                        <p style="margin-bottom: 1.25rem;"><strong>Email:</strong> <a href="mailto:heavonodysseus@gmail.com" style="color: var(--primary-color);">heavonodysseus@gmail.com</a></p>
+                        <div style="display: flex; justify-content: center; gap: 1.25rem; font-size: 1.35rem;">
+                            <a href="https://github.com/heavonodysseus-pixel" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/haikal-danial-517763442/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/Heazkaru03" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="Name">
+                            <small class="error-message"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required placeholder="email@example.com">
+                            <small class="error-message"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+                            <small class="error-message"></small>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                        <p id="form-status" class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Haikal Danial. Built with HTML, CSS, & JavaScript.</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Zoomed project view">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
